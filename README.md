@@ -6,6 +6,8 @@ Prerequisites:
 
 1. Install Golang `sudo apt-get install golang`
 1. Install Kind binary `go install sigs.k8s.io/kind@v0.22.0`
+1. Add to `$HOME/.bashrc`
+2.     EXPORT PATH="$PATH:$(go env GOPATH)/bin" 
 1. install kubectl 
     ```bash
     curl -LO https://dl.k8s.io/release/v1.29.3/bin/linux/amd64/kubectl
