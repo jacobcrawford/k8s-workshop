@@ -23,16 +23,3 @@ Prerequisites:
 1. Clone this repo and move into it
 1. Create Kind cluster `kind create cluster --config=cluster/kind.yaml`
 1. Validate cluster is running `kubectl get pods -A`
-1. Install Container Network Interface 
-    ```
-    helm repo add cilium https://helm.cilium.io/
-    docker pull quay.io/cilium/cilium:v1.14.4
-    kind load docker-image quay.io/cilium/cilium:v1.14.4
-    helm install cilium cilium/cilium --version 1.14.4 \
-   --namespace kube-system \
-   --set image.pullPolicy=IfNotPresent \
-   --set ipam.mode=kubernetes
-    ```
-
-
-1. Install bash completion
