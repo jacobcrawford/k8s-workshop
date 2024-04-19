@@ -7,7 +7,8 @@ Prerequisites:
 1. Install Golang `sudo apt-get install golang`
 1. Install Kind binary `go install sigs.k8s.io/kind@v0.22.0`
 1. Add to `$HOME/.bashrc`
-2.     export PATH="$PATH:$(go env GOPATH)/bin" 
+2.     export PATH="$PATH:$(go env GOPATH)/bin"
+3. Run `bash` if you have fish and exit the shell else `source $HOME/.bashrc` 
 1. install kubectl 
     ```bash
     curl -LO https://dl.k8s.io/release/v1.29.3/bin/linux/amd64/kubectl
@@ -25,13 +26,13 @@ Prerequisites:
 1. Install Container Network Interface 
     ```
     helm repo add cilium https://helm.cilium.io/
-    docker pull quay.io/cilium/cilium:v1.15.4
-    kind load docker-image quay.io/cilium/cilium:v1.15.4
-    helm install cilium cilium/cilium --version 1.15.4 \
+    docker pull quay.io/cilium/cilium:v1.14.4
+    kind load docker-image quay.io/cilium/cilium:v1.14.4
+    helm install cilium cilium/cilium --version 1.14.4 \
    --namespace kube-system \
    --set image.pullPolicy=IfNotPresent \
    --set ipam.mode=kubernetes
     ```
-1. validate `helm version`
+
 
 1. Install bash completion
