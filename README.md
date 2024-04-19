@@ -18,7 +18,8 @@ Prerequisites:
     wget https://get.helm.sh/helm-v3.14.4-linux-amd64.tar.gz
     tar -zxvf helm-v3.14.4-linux-amd64.tar.gz
     sudo mv linux-amd64/helm /usr/local/bin/helm
-    ``` 
+    ```
+1. Clone this repo and move into it
 1. Create Kind cluster `kind create cluster --config=cluster/kind.yaml`
 1. Validate cluster is running `kubectl get pods -A`
 1. Install Container Network Interface 
