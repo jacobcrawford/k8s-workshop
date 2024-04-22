@@ -4,8 +4,8 @@ metadata:
   name: nginx-service
 spec:
   selector:
-    app: nginx
+    app: nginx #this-cannot-be-the-correct-label
   ports:
     - protocol: TCP
-      port: 80
+      port: 8080
       targetPort: 80

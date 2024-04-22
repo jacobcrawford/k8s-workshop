@@ -23,3 +23,4 @@ Prerequisites:
 1. Clone this repo and move into it
 1. Create Kind cluster `kind create cluster --config=cluster/kind.yaml`
 1. Validate cluster is running `kubectl get pods -A`
+1. Goto [tasks](tasks/task1.md)

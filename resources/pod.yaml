@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: nginx-container
-    image: nginx:latest
+    image: nginx:1.25.5
     ports:
-    - containerPort: 80
+    - containerPort: 80 #Port that is open on the container
