@@ -7,3 +7,4 @@ Changes to a Pod will be removed because the Pods are stateless and will be crea
 1. Destroy the Pod 
 1. Attach terminal to one of the pods and read the file at `/etc/k8s-volume/test`
     a. You see that the content is the same, and should be the same in all Pods, no matter how many times they die.
+1. Go to [Future tasks](../tasks/task5.md)
