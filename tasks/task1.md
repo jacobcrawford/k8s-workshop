@@ -8,7 +8,7 @@ We cant to create our first running container on Kubernetes. This will be the si
 1. Change the version to `1.24.0` and deploy the Pods again
 1. Describe the Nginx pod and find the ClusterIP
 1. Attach terminal to the Curl container and call the endpoint for the Nginx pod on port 80
-1. Delete the Nginx pod
+1. Delete the Nginx pod and create it again
 1. Curl the Nginx pod again
     a. Did something change?
 1. Go to [service tasks](../tasks/task2.md)
